@@ -1,0 +1,11 @@
+nav ul{
+    padding: 10;
+    margin:10;
+    list-style-type: none;
+}
+nav li{
+    display: inline-block;
+    width: 130px;
+    border-right: 1px solid #CCCCCC;
+    text-align: center;
+}

@@ -1,0 +1,12 @@
+table#exo6 th {
+    background-color: #D48030 ;
+    font-weight: bold ;
+    text-align: left ;
+}
+table#exo6 tr.ligne_paire{
+    background-color: #BEA58E ;
+}
+table#exo6 tr.ligne_impaire{
+    background-color: #EBD9C8 ;
+}
+
