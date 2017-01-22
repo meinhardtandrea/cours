@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles.css" type="text/css"/>
+        <script type="text/javascript" src="chemin/du/fichier/javascript.js"></script>
+    </head>
+    <body>
+       
+        <form action="http://www.depanfermetures56.fr/send.php" method="post">
+            <fieldset>          
+                <legend>Input</legend>
+
+                            <input type="text" name="champ1" value="type texte" />
+                <br /><br /><input type="password" name="champ2" value="" />
+                <br /><br /><input type="number" name="champ3" value="1" />
+                <br /><br /><input type="reset" name="annuler" value="Annuler" />
+                <br /><br /><input type="submit" name="valider" value="OK" />
+                <br /><br /><input type="button" name="bouton" value="Bouton" />
+                <br /><br /><input type="hidden" name="champ5" value="pouet" />
+                <br /><br /><textarea name="champ4">azdazdazd</textarea>
+                <br /><br />
+                <input type="radio" name="civilite" value="mlle"> Mademoiselle
+                <input type="radio" name="civilite" value="mme"> Madame
+                <input type="radio" name="civilite" value="mr"> Monsieur
+                <br /><br />
+                <input type="radio" name="genre" value="homme" checked="checked"> Homme
+                <input type="radio" name="genre" value="femme"> Femme  
+                <input type="radio" name="genre" value="et"> Alien
+                <input type="radio" name="genre" value="indéfini"> Indéfini
+                <br /><br />
+                <input type="checkbox" name="qualite[]" value="intelligent"> Intelligent
+                <input type="checkbox" name="qualite[}" value="beau" checked="checked"> Beau
+                <input type="checkbox" name="qualite[]" value="serviable" checked="checked"> Serviable
+                <input type="checkbox" name="qualite[]" value="fort"> Fort
+            </fieldset>
+
+            <br /><br />
+
+            <fieldset>
+                <legend>Listes déroulantes</legend>
+                <select name="couleur_yeux">
+                    <option value="bleus" selected="selected">Bleus</option>
+                    <option value="bruns">Bruns</option>
+                    <option value="verts">Verts</option>
+                </select>
+
+                <select name="matieres_preferees" size="5" multiple="multiple">
+                    <option value="maths">Maths</option>
+                    <option value="français">Français</option>
+                    <option value="anglais">Anglais</option>
+                    <option value="histoire">Histoire</option>
+                    <option value="sport">Sport</option>
+                    <option value="dessin">Dessin</option>
+                    <option value="musique">Musique</option>
+                    <option value="physique">Physique</option>
+                    <option value="sciences naturelles">Sciences naturelles</option>
+                </select>
+
+            </fieldset>
+
+            <input type="button" name="autre" value="Bouton pour autre chose"> <!--onclick="javascript:ma_fonction(5)"-->
+            <input type="reset" name="annuler" value="Annuler">
+            <input type="submit" name="envoyer" value="Envoyer">
+
+        </form>
+    </body>
+    
+    
+</html>

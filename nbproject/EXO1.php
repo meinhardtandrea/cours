@@ -1,22 +1,18 @@
  <?php
-class Ville
-  {
+class Ville {
    
-    private $nom;
-    private $departement;
-  private $numeroDPT;
-    public function __construct($nom,$departement,$numeroDPT){
+    private $_nom ;
+    private $_departement ;
+    private $_numeroDPT ;
+   
+    public function __construct($nom, $departement, $numeroDPT){
 
-        $this->ville=$nom;
-        $this->departement=($departement);
-        $this->numeroDPT+($numerpDPT);
+        $this->_ville = $nom ;
+        $this->_departement = $departement ;
+        $this->_numeroDPT + $numeroDPT ;
    }
-  public function Aff() { 
-      return $msg='ville'.$this->nom.'est dans le departement'.$this->departement;
-  
-
- 
-  
-
+    public function Aff() { 
+        return $msg = 'Ville' . $this->_nom . ' est dans le departement ' . $this->_departement ;
     }
+}
     ?>
