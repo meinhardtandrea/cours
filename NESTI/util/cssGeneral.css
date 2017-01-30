@@ -69,3 +69,27 @@ p {
     display: inline-block;
     margin: 0px 65px;
 }
+
+.categories{
+    background-color: white;
+    height: 4.8em;
+    border-top: 2px solid #000000 ;
+    border-bottom: 2px solid #000000 ;
+    
+    /*    Aligner au milieu    */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.categories li {
+    list-style-type: none; 
+    text-align: left;
+    
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+    font-size: 45px;
+    color : #F09D9D;
+}
+.categories li a {
+    text-decoration: none;
+}
