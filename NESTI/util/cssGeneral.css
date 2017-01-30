@@ -1,0 +1,71 @@
+html {
+    background-color: rgb(244,244,243);
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    
+/*    Dégradé de couleurs :    */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #F09D9D, #FF4040);
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+    font-size: 60px;
+    color : #000000;
+}
+
+.chapo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu {
+    background-color: white;
+    height: 4.8em;
+    border-top: 2px solid #000000 ;
+    border-bottom: 2px solid #000000 ;
+    
+/*    Aligner au milieu    */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#menu li {
+    list-style-type: none; 
+    text-align: center;
+    
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+    font-size: 45px;
+    color : #000000;
+    
+/*    menu horizontal    */
+    display: inline;
+}
+
+#menu li a {
+    text-decoration: none;
+    color : #000000;
+    
+/*    menu horizontal    */
+    display: inline-block;
+    margin: 0px 65px;
+}

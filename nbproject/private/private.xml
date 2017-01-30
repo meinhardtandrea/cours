@@ -3,10 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/web/andrea/controle/2.js</file>
-            <file>file:/D:/web/andrea/controle/2.html</file>
-            <file>file:/D:/web/andrea/controle/2.php</file>
-            <file>file:/D:/web/andrea/controle/2_traiter.php</file>
+            <file>file:/D:/web/andrea/lafleur/controleurs/c_gestionPanier.php</file>
+            <file>file:/D:/web/andrea/NESTI/index.php</file>
+            <file>file:/D:/web/andrea/NESTI/vues/v_bandeau.php</file>
+            <file>file:/D:/web/andrea/NESTI/controleurs/c_gestionRecettes.php</file>
+            <file>file:/D:/web/andrea/NESTI/controleurs/c_gestionIngredients.php</file>
         </group>
     </open-files>
 </project-private>
