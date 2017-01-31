@@ -1,0 +1,44 @@
+@font-face{
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-regular.eot') format('embedded-opentype'),
+         url('fonts/SourceSansPro-regular.ttf.woff2') format('woff2'),
+         url('fonts/SourceSansPro-regular.otf.woff') format('woff'),
+         url('fonts/SourceSansPro-regular.otf') format('opentype'),
+         url('fonts/SourceSansPro-regular.ttf') format('truetype');
+}
+
+body {
+    font-size: 12px;
+    color: grey;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
+div#header {
+   font-family: Times New Roman, serif;
+   margin-bottom: 30px;
+   font-size: 18px;
+   text-align: center;
+}
+
+div {
+   border: 1px solid blue;
+   min-height: 50px;
+   margin: 10px;
+   padding: 5px 10px;
+}
+
+.texte_important {
+    background-color: azure;
+    text-align: justify;
+}
+
+.texte_gras {
+    font-weight: bold;
+}
+
+p {
+    margin: 5px;
+    padding: 5px;
+    border: 1px dashed green;
+    color: blue;
+}

@@ -1,20 +1,20 @@
 <?php
 
 class Personne{
-    private $nom;
-    private$prenom;
-    private $adresse;
-   public function __construct($nom,$prenom,$adresse){
-       $this->nom=$nom;
-        $this->prenom=$prenom;
-       $this->adresse=$adresse;
-   publi funcion get personne(){
-       
-       $aff= $this->nom.' '.$ths->prenom.'habite'.$this->adresse;
-       return $aff
+    private $_nom ;
+    private $_prenom ;
+    private $_adresse ;
+    public function __construct($nom, $prenom, $adresse){
+       $this->nom = $nom ;
+       $this->prenom = $prenom ;
+       $this->adresse = $adresse ;
+    }
+   public function getPersonne(){
+       $aff = $this->_nom . ' ' . $this->_prenom . ' habite ' . $this->_adresse ;
+       return $aff;
    }      
-       public function setadresse($adresse){
-           $this->adresse= $adresse       }
-   }
+    public function setAdresse($adresse){
+           $this->adresse= $adresse ;                     
+    }
 }
 
