@@ -1,6 +1,8 @@
 <?php
 class ville{
     
+    // Test
+    
     private $_nom;
     private $_departement;
     
@@ -29,4 +31,5 @@ $ville1->setDepartement('Herault');
 echo'<br />';
 $ville1-> affichage();
 echo'<br />';
+
 ?>
