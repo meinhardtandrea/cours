@@ -1,7 +1,19 @@
 <!--Logo avec lien vers la page d'accueil-->
 <div>
-    <img id="logo" src="images/logo.png" alt="Logo Nesti" title="Logo Nesti"/>
+    <a href="index.php?uc=accueil">
+        <img id="logo" src="images/logo.png" alt="Logo Nesti" title="Logo Nesti"/>
+    </a>
 </div>
+
+<!--Login-->
+<!--
+<form method="link" action="index.php?uc=login&action=je_veux_minscrire"> <input type="submit" value="S'inscrire"></form>
+<form method="link" action="index.php?uc=login&action=je_veux_me_connecter"> <input type="submit" value="Se connecter"></form>
+-->
+<ul>
+    <li><a href="index.php?uc=login&action=je_veux_minscrire"> S'inscrire </a></li>
+    <li><a href="index.php?uc=login&action=je_veux_me_connecter"> Se connecter </a></li>
+</ul>
 
 <!--Menu-->
 <ul id="menu">

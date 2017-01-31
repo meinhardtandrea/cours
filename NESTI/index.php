@@ -14,6 +14,9 @@ if( !isset ( $_REQUEST['uc'])){
 $pdo = PdoNesti::getPdoNesti();
 
 switch ( $uc){
+    case 'login':
+        include "controleurs/c_gestionLogin.php"; break;
+    
     case 'accueil':
         include "vues/v_accueil.php"; break;   
     case 'gestionIngredients':

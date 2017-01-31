@@ -23,7 +23,20 @@ class PdoNesti {
         }
         return PdoNesti::$_classPdoNesti;
     }
-
+    
+    public function crypterMdp(){
+        $grail = 'M4Gthu56G' ;
+        hash('sha256', $mdp.$grail) ;
+    }
+    public function enregistrerLogin(){
+        $requete = 'INSERT INTO membres VALUES (:login, :mdp, :email)';
+        $resultat = PdoNesti::$_bdd->prepare($requete);
+        $resultat->bindParam(':login', $login, PDO::PARAM_STR);
+        $resultat->bindParam(':mdp', $mdp, PDO::PARAM_STR);
+        $resultat->bindParam(':email', $email, PDO::PARAM_STR);
+        $resultat->execute();
+    }
+    
     public function getCategories_Ingredients(){
         $requete = 'SELECT * FROM cat_ingredient';
         $resultat = PdoNesti::$_bdd->prepare($requete);
