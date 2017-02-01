@@ -1,5 +1,3 @@
 <div>
-    <ul>
-        <li><?php echo $message; ?></li>
-    </ul>
+    <?php echo $message; ?>
 </div>

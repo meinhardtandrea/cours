@@ -29,7 +29,7 @@ class PdoNesti {
         hash('sha256', $mdp.$grail) ;
     }
     public function enregistrerLogin(){
-        $requete = 'INSERT INTO membres VALUES (:login, :mdp, :email)';
+        $requete = 'INSERT INTO client(login_cli, mdp_cli, email_cli) VALUES (:login, :mdp, :email)';
         $resultat = PdoNesti::$_bdd->prepare($requete);
         $resultat->bindParam(':login', $login, PDO::PARAM_STR);
         $resultat->bindParam(':mdp', $mdp, PDO::PARAM_STR);

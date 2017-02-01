@@ -1,4 +1,4 @@
-html {
+html, body {
     background-color: rgb(244,244,243);
 }
 
@@ -29,6 +29,72 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
     font-size: 16px;
+}
+
+.button_inscription {
+    background-color: #F09D9D;
+    height: 2.4em;
+    border-top: 2px solid #FF4040 ;
+    border-right:  2px solid #FF4040 ;
+    border-bottom: 2px solid #FF4040 ;
+    border-left:  2px solid #FF4040 ;
+    
+    /*    Aligner au milieu    */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.button_inscription li {
+    list-style-type: none; 
+    text-align: center;
+    
+    font-family: 'Open Sans', sans-serif;
+    color : #000000;
+    
+/*    disposition horizontale    */
+    display: inline;
+}
+
+.button_inscription li a {
+    text-decoration: none;
+    color : #000000;
+    
+/*    disposition horizontale    */
+    display: inline-block;
+    margin: 0px 48px;
+}
+
+.button_connexion {
+    background-color: #F09D9D;
+    height: 2.4em;
+    border-top: 2px solid #FF4040 ;
+    border-right:  2px solid #FF4040 ;
+    border-bottom: 2px solid #FF4040 ;
+    border-left:  2px solid #FF4040 ;
+    
+    /*    Aligner au milieu    */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.button_connexion li {
+    list-style-type: none; 
+    text-align: center;
+    
+    font-family: 'Open Sans', sans-serif;
+    color : #000000;
+    
+/*    disposition horizontale    */
+    display: inline;
+}
+
+.button_connexion li a {
+    text-decoration: none;
+    color : #000000;
+    
+/*    disposition horizontale    */
+    display: inline-block;
+    margin: 0px 35px;
 }
 
 #logo {
