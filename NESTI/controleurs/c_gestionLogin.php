@@ -11,12 +11,20 @@ switch ($action){
    
     case 'enregistrer_inscription':
         
+        $nom    = $_POST['nom'];
+        $prenom = $_POST['prenom'];
+        $civ    = print $_POST['civ'];
+        $adresse= $_POST['adresse'];
+        $cp     = $_POST['cp'];
+        $ville  = $_POST['ville'];
+        $tel    = $_POST['tel'];
         $login  = $_POST['login'];
         $mdp    = $_POST['mdp'];
         $re_mdp = $_POST['re_mdp'];
-        $email  = $_POST['email'];
+        
+        include "vues/v_inscription.php";
               
-        if( empty($login) || empty($mdp) || empty($re_mdp) || empty($email)){
+        if( empty($login) || empty($mdp) || empty($re_mdp)){
             $message = '<br>Merci de remplir tous les champs. ';
             include "vues/v_message.php";
             
@@ -25,17 +33,14 @@ switch ($action){
                 include "vues/v_message.php";
             }
             
-            include "vues/v_inscription.php";
         }else{
             $message = 'Inscription réussie. ';
             include "vues/v_message.php";
             echo '<a href="index.php?uc=login&action=je_veux_me_connecter"> Me connecter </a>';
         }
-        
-        
 
-//               $proteger = $pdo->crypterMdp();
-//        $insert_dans_bdd = $pdo->enregistrerLogin();
+        $proteger = $pdo->hashMdp();
+        $insert_dans_bdd = $pdo->enregistrerLogin();
         
         break;
     

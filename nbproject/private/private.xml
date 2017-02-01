@@ -2,15 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/web/andrea/NESTI/vues/v_connect.php</file>
-            <file>file:/D:/web/andrea/NESTI/util/cssGeneral.css</file>
-            <file>file:/D:/web/andrea/NESTI/controleurs/c_gestionLogin.php</file>
-            <file>file:/D:/web/andrea/NESTI/util/class_PdoNesti.php</file>
-            <file>file:/D:/web/andrea/NESTI/vues/v_inscription.php</file>
-            <file>file:/D:/web/andrea/NESTI/index.php</file>
-            <file>file:/D:/web/andrea/NESTI/vues/v_bandeau.php</file>
-            <file>file:/D:/web/andrea/NESTI/vues/v_Categories_Ingredients.php</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

@@ -1,5 +1,12 @@
 <?php
 session_start();
+
+require_once("util/nesti.init.php");
+if( $GLOBALS[ 'config'][ 'show_all_errors'] == true){
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+}
+
 require_once("util/class_PdoNesti.php");
 include "vues/v_entete.php";
 include "vues/v_bandeau.php";

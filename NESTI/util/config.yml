@@ -1,0 +1,21 @@
+default:
+    mysql_connexion:
+        host: localhost
+        dbname: nesti
+        user: root
+        password: ''
+    show_all_errors: false
+dev_maison:
+    mysql_connexion:
+        host: localhost
+        dbname: nesti
+        user: root
+        password: root
+    show_all_errors: true
+dev_orchestra:
+    mysql_connexion:
+        host: localhost
+        dbname: nesti
+        user: root
+        password: ''
+    show_all_errors: true
