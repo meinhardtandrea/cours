@@ -5,8 +5,8 @@ class PdoNesti {
     private $_bdd;
     // Instance unique (statique) de PdoNesti
     private static $_classPdoNesti = NULL;
-    private $_host;// = 'mysql:host=localhost';
-    private $_dbName;// = 'dbname=nesti';
+    private $_host;// = 'localhost';
+    private $_dbName;// = 'nesti';
     private $_user;// = 'root';
     private $_password;// = '';
     
@@ -21,7 +21,7 @@ class PdoNesti {
         $this->_user= $conf_mysql[ 'user'];
         $this->_password= $conf_mysql[ 'password'];
         // Instanciation du PDO
-        $this->_bdd = new PDO( $this->_host . ';' . $this->_dbName, $this->_user, $this->_password);
+        $this->_bdd = new PDO( 'mysql:host=' . $this->_host . ';dbname=' . $this->_dbName, $this->_user, $this->_password);
         $this->_bdd->query("SET CHARACTER SET utf8");
     }
     public function __destruct() {
@@ -38,17 +38,12 @@ class PdoNesti {
         return PdoNesti::$_classPdoNesti;
     }
     
-    public function hashMdp(){
-        if(strlen($mdp) < 7){
-            echo 'Mot de passe non conforme <br> ';
-        }else{
-            $mdp = hash('sha256',$mdp);      
-    }
-    }
-    public function enregistrerLogin(){
-        $requete = "INSERT INTO client ('nom_cli','prenom_cli','civ_cli','adr_cli','cp_cli','ville_cli','email_cli','tel_cli','login_cli','mdp_cli') VALUES ('$nom','$prenom','$civ','$adresse','$cp','$ville','$login','$tel','$login','$mdp')";
+    public function enregistrerLogin($nom,$prenom,$civ,$adresse,$cp,$ville,$login,$tel,$login,$proteger){
+        $requete  = "INSERT INTO client (nom_cli,prenom_cli,civ_cli,adr_cli,cp_cli,ville_cli,email_cli,tel_cli,login_cli,mdp_cli) ";
+        $requete .= "VALUES ('$nom','$prenom','$civ','$adresse','$cp','$ville','$login','$tel','$login','$proteger')";
         $resultat = $this->_bdd->prepare($requete);
-        $resultat->execute();
+        $resume = $resultat->execute();
+        return $resume;
     }
     
     public function getCategories_Ingredients(){
