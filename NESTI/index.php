@@ -11,7 +11,7 @@ require_once("util/class_PdoNesti.php");
 include "vues/v_entete.php";
 include "vues/v_bandeau.php";
 
-//Gérer le menu vie un switch
+
 if( !isset ( $_REQUEST['uc'])){
     $uc = 'accueil';
 }else{
@@ -21,9 +21,12 @@ if( !isset ( $_REQUEST['uc'])){
 $pdo = PdoNesti::getPdoNesti();
 
 switch ( $uc){
+
+//Boutons inscription et connexion
     case 'login':
         include "controleurs/c_gestionLogin.php"; break;
-    
+
+//Menu
     case 'accueil':
         include "vues/v_accueil.php"; break;   
     case 'gestionIngredients':
@@ -36,6 +39,10 @@ switch ( $uc){
         include "controleurs/c_gestionAdmin.php"; break;
     case 'gestionCompte':
         include "controleurs/c_gestionCompte.php"; break;
+    
+//Fiche recette
+    case 'voirRecette':
+        include "controleurs/c_voirRecette.php"; break;
     }
 
 include "vues/v_pied.php";

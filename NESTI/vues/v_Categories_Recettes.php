@@ -1,3 +1,4 @@
+<!--Sous-menu Catégories Recettes-->
 <br><div>
      <ul class="categories">
         <?php

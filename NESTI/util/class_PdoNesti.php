@@ -38,12 +38,21 @@ class PdoNesti {
         return PdoNesti::$_classPdoNesti;
     }
     
-    public function enregistrerLogin($nom,$prenom,$civ,$adresse,$cp,$ville,$login,$tel,$login,$proteger){
+    public function enregistrerLogin($nom,$prenom,$civ,$adresse,$cp,$ville,$login,$tel,$login,$mdp_hash){
         $requete  = "INSERT INTO client (nom_cli,prenom_cli,civ_cli,adr_cli,cp_cli,ville_cli,email_cli,tel_cli,login_cli,mdp_cli) ";
-        $requete .= "VALUES ('$nom','$prenom','$civ','$adresse','$cp','$ville','$login','$tel','$login','$proteger')";
+        $requete .= "VALUES ('$nom','$prenom','$civ','$adresse','$cp','$ville','$login','$tel','$login','$mdp_hash')";
         $resultat = $this->_bdd->prepare($requete);
         $resume = $resultat->execute();
         return $resume;
+    }
+    public function getMdp($login){
+        $requete  = "SELECT mdp_cli FROM nesti.client WHERE login_cli = '$login';";
+        $resultat = $this->_bdd->prepare($requete);
+        $resultat->execute();
+        
+        while($donnees = $resultat->fetch()){
+            return $donnees['mdp_cli'];
+        }
     }
     
     public function getCategories_Ingredients(){
@@ -54,8 +63,24 @@ class PdoNesti {
         $afficher = $resultat->fetchAll();
         return $afficher;
     }
+    public function getIngredients($id_recette){
+        $requete = "SELECT * FROM ingredient WHERE id_rec = '$id_recette';";
+        $resultat = $this->_bdd->prepare($requete);
+        $resultat->execute();
+        
+        $afficher = $resultat->fetchAll();
+        return $afficher;
+    }
     public function getCategories_Recettes(){
         $requete = 'SELECT * FROM cat_recette';
+        $resultat = $this->_bdd->prepare($requete);
+        $resultat->execute();
+        
+        $afficher = $resultat->fetchAll();
+        return $afficher;
+    }
+    public function getRecettes($id_categorie_recette){
+        $requete = "SELECT * FROM recette WHERE id_cat_rec = '$id_categorie_recette';";
         $resultat = $this->_bdd->prepare($requete);
         $resultat->execute();
         

@@ -1,3 +1,4 @@
+<!--Sous-menu Catégories Ingrédients-->
 <br><div>
     <ul class="categories">
         <?php

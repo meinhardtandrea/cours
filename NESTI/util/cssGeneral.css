@@ -25,6 +25,10 @@ h2 {
     font-size: 20px;
 }
 
+.sous-titre {
+
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
@@ -156,6 +160,16 @@ p {
     font-size: 45px;
     color : #F09D9D;
 }
+
 .categories li a {
     text-decoration: none;
 }
+
+#fiche_recette {
+    
+}
+
+#img_recette {
+    
+}
+

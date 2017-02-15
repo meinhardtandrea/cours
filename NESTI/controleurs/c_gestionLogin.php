@@ -38,13 +38,13 @@ switch ($action){
             
         }else{
             
-            $proteger = Outils\hashMdp($mdp);
-            if($proteger == NULL){
+            $mdp_hash = Outils\hashMdp($mdp);
+            if($mdp_hash == NULL){
                $message = 'Mot de passe non conforme. Merci de choisir un mot de passe contenant au moins 7 caractères. <br> ';
                include "vues/v_message.php";
             
             }else{
-               $insert_dans_bdd = $pdo->enregistrerLogin($nom,$prenom,$civ,$adresse,$cp,$ville,$login,$tel,$login,$proteger);
+               $insert_dans_bdd = $pdo->enregistrerLogin($nom,$prenom,$civ,$adresse,$cp,$ville,$login,$tel,$login,$mdp_hash);
                
                if($insert_dans_bdd !== TRUE){
                    $message = 'Echec. Veuillez réessayer.';
@@ -67,14 +67,20 @@ switch ($action){
         if( empty($login) || empty($mdp)){
             $message = 'Merci de remplir tous les champs. ';
             include "vues/v_message.php";
+            include "vues/v_connect.php";
         }else{
-
-            $message = 'Connexion réussie. ';
-            include "vues/v_message.php";
-
+            
+            $mdp_hash = Outils\hashMdp($mdp);
+            $mdp_dans_bdd = $pdo->getMdp($login);
+            if($mdp_hash != $mdp_dans_bdd){
+                $message = 'Mauvais mot de passe.';
+                include "vues/v_message.php";
+                include "vues/v_connect.php";
+            }else{
+                $message = 'Connexion réussie.';
+                include "vues/v_message.php";
+            }
         }
-
-    //faire appel à une fonction 
     break;
 }
 ?>
