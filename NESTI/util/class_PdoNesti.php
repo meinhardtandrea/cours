@@ -5,21 +5,22 @@ class PdoNesti {
     private $_bdd;
     // Instance unique (statique) de PdoNesti
     private static $_classPdoNesti = NULL;
-    private $_host;// = 'localhost';
-    private $_dbName;// = 'nesti';
-    private $_user;// = 'root';
-    private $_password;// = '';
+    private $_host;
+    private $_dbName;
+    private $_user;
+    private $_password;
+    
     
     /**
      * Le __construct privé empêche de pouvoir instancier PdoNesti dans d'autres classes qu'elle-même
      */
     private function __construct(){
         // Récupération des données de connexion mysql dans le tableau global config
-        $conf_mysql= $GLOBALS[ 'config'][ 'mysql_connexion'];
-        $this->_host= $conf_mysql[ 'host'];
-        $this->_dbName= $conf_mysql[ 'dbname'];
-        $this->_user= $conf_mysql[ 'user'];
-        $this->_password= $conf_mysql[ 'password'];
+        $conf_mysql      = $GLOBALS[ 'config'][ 'mysql_connexion'];
+        $this->_host     = $conf_mysql[ 'host'];
+        $this->_dbName   = $conf_mysql[ 'dbname'];
+        $this->_user     = $conf_mysql[ 'user'];
+        $this->_password = $conf_mysql[ 'password'];
         // Instanciation du PDO
         $this->_bdd = new PDO( 'mysql:host=' . $this->_host . ';dbname=' . $this->_dbName, $this->_user, $this->_password);
         $this->_bdd->query("SET CHARACTER SET utf8");
@@ -28,6 +29,7 @@ class PdoNesti {
         $this->_bdd = NULL;
     }
 
+    
     /**
      * Le seul moyen d'obtenir l'instance de PdoNesti est de passer par cette méthode
      */
@@ -37,6 +39,7 @@ class PdoNesti {
         }
         return PdoNesti::$_classPdoNesti;
     }
+    
     
     public function enregistrerLogin($nom,$prenom,$civ,$adresse,$cp,$ville,$login,$tel,$login,$mdp_hash){
         $requete  = "INSERT INTO client (nom_cli,prenom_cli,civ_cli,adr_cli,cp_cli,ville_cli,email_cli,tel_cli,login_cli,mdp_cli) ";
@@ -55,24 +58,39 @@ class PdoNesti {
         }
     }
     
+    
     public function getCategories_Ingredients(){
-        $requete = 'SELECT * FROM cat_ingredient';
+        $requete  = 'SELECT * FROM cat_ingredient';
         $resultat = $this->_bdd->prepare($requete);
         $resultat->execute();
         
         $afficher = $resultat->fetchAll();
         return $afficher;
     }
+    /** Je pense qu'on n'en a pas besoin. 
+     *  Appel de cette fonction dans c_gestionRecettes ligne 16
+     *  Affichage des données dans v_Fiche_Recette ligne ligne 52
+     * 
     public function getIngredients($id_recette){
-        $requete = "SELECT * FROM ingredient WHERE id_rec = '$id_recette';";
+        $requete  = "SELECT * FROM ingredient WHERE id_rec = '$id_recette';";
         $resultat = $this->_bdd->prepare($requete);
         $resultat->execute();
         
+        $afficher = $resultat->fetchAll();
+        return $afficher;
+    }*/
+    public function getQuantite_Ingredient($id_recette){
+        $requete  = "SELECT lib_ing, quantite FROM mesure m ";
+        $requete .= "JOIN ingredient i on m.id_ing = i.id_ing";
+        $requete .= "WHERE id_rec = '$id_recette';";
+        $resultat = $this->_bdd->prepare($requete);
+        $resultat->execute();
+                
         $afficher = $resultat->fetchAll();
         return $afficher;
     }
     public function getCategories_Recettes(){
-        $requete = 'SELECT * FROM cat_recette';
+        $requete  = 'SELECT * FROM cat_recette';
         $resultat = $this->_bdd->prepare($requete);
         $resultat->execute();
         
@@ -80,10 +98,18 @@ class PdoNesti {
         return $afficher;
     }
     public function getRecettes($id_categorie_recette){
-        $requete = "SELECT * FROM recette WHERE id_cat_rec = '$id_categorie_recette';";
+        $requete  = "SELECT * FROM recette WHERE id_cat_rec = '$id_categorie_recette';";
         $resultat = $this->_bdd->prepare($requete);
         $resultat->execute();
         
+        $afficher = $resultat->fetchAll();
+        return $afficher;
+    }
+    public function getImage_Recette($id_recette){
+        $requete  = "SELECT * FROM media WHERE id_rec = '$id_recette';";
+        $resultat = $this->_bdd->prepare($requete);
+        $resultat->execute();
+
         $afficher = $resultat->fetchAll();
         return $afficher;
     }

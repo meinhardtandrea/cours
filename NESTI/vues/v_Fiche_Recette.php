@@ -1,7 +1,6 @@
 <!--Fiche recette-->
 
-<div id="fiche_recette">
-    <?php
+<?php
     foreach($les_recettes as $une_recette){
         $id_rec      = $une_recette['id_rec'];
         $titre_rec   = $une_recette['lib_rec'];
@@ -12,24 +11,18 @@
         $tps_cuisson = $une_recette['tps_cuisson'];
         $difficulte  = $une_recette['difficulte'];
         $texte       = $une_recette['texte'];
-    }
+        
+?>
+<div id="fiche_recette">
     
-    //à faire : créer une fonction ds la class PDO pour récupérer les ingrédients de la recette
-    foreach($les_ingrédients as $un_ingrédient){
-        $id_ing      = $un_ingredient['id_ing'];
-        $lib_ing     = $un_ingredient['lib_ing'];
-    }
-    
-    //à faire : créer une table media ds la BDD + créer une fonction ds la classe PDO pour récupérer 
-    foreach($les_images as $une_image){
-        $id_img      = $une_image['id_img'];
-        $src_img     = $une_image['src_img'];
-        $alt_img     = $une_image['alt_img'];
-        $title_img   = $une_image['title_img'];
-    }
-    ?>
     <div id="img_recette">
-        <img id="<?php echo $id_img ?>" src="<?php echo $src_img ?>" alt="<?php echo $alt_img ?>" title="<?php echo $title_img ?>"/>
+        <img id="img_recette
+            <?php  foreach($les_images as $une_image){
+                $id_img      = $une_image['id_med'];
+                $lib_img     = $une_image['lib_med'];
+                $format      = $une_image['format'];
+                echo $id_img ?>" src="images/<?php echo $lib_img . '.' . $format ?>" alt="<?php echo $lib_img ?>" title="<?php echo $lib_img ?>"/>
+            <?php } ?>
     </div>
     <div>
         <h2><?php echo $titre_rec ?></h2>
@@ -40,9 +33,23 @@
         <p><?php echo $date_rec ?></p>
         <p class="sous-titre">Ingrédients :</p>
         <ul>
-            <li></li>
+            <?php foreach($quantites_des_ingredients as $quantite_pour_un_ingredient){
+                $lib_ing     = $quantite_pour_un_ingredient['lib_ing'];
+                $quantite    = $quantite_pour_un_ingredient['quantite'];
+                echo '<li>' . $lib_ing . '(' . $quantite . ')</li>'; } ?>
         </ul>
         <p class="sous-titre">Préparation :</p>
         <p><?php echo $texte ?></p>
     </div>
 </div>
+<?php    
+}
+?>
+
+
+<!--Je pense qu'on n'en a pas besoin -->  
+<!--
+    foreach($les_ingredients as $un_ingredient){
+        $id_ing      = $un_ingredient['id_ing'];
+        $lib_ing     = $un_ingredient['lib_ing'];
+    } -->    
