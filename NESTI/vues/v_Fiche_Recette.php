@@ -1,18 +1,5 @@
 <!--Fiche recette-->
 
-<?php
-    foreach($les_recettes as $une_recette){
-        $id_rec      = $une_recette['id_rec'];
-        $titre_rec   = $une_recette['lib_rec'];
-        $chapo_rec   = $une_recette['chapo_rec'];
-        $date_rec    = $une_recette['date'];
-        $nb_pers     = $une_recette['nb_pers'];
-        $tps_prepa   = $une_recette['tps_prepa'];
-        $tps_cuisson = $une_recette['tps_cuisson'];
-        $difficulte  = $une_recette['difficulte'];
-        $texte       = $une_recette['texte'];
-        
-?>
 <div id="fiche_recette">
     
     <div id="img_recette">
@@ -28,28 +15,36 @@
         <h2><?php echo $titre_rec ?></h2>
         <p class="chapo"><?php echo $chapo_rec ?></p>
         <div>
-            <!--Insérer icônes : nb_pers + tps de prépa + tps de cuisson + la difficulté de la recette-->
+            <ul>
+                <li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Pour <?php echo $nb_pers ?> personnes</li>
+                <li><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Temps de préparation : <?php echo $tps_prepa ?></li>
+                <li><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Temps de cuisson : <?php echo $tps_cuisson ?></li>
+                <li>Difficulté : 
+                    <?php
+                    switch($difficulte){
+                        case 1: echo '<span class="glyphicon glyphicon-star" aria-hidden="true"></span>'; break;
+                        case 2: for($i=1 ; $i<=2 ; $i++){ echo '<span class="glyphicon glyphicon-star" aria-hidden="true"></span>'; } break;
+                        case 3: for($i=1 ; $i<=3 ; $i++){ echo '<span class="glyphicon glyphicon-star" aria-hidden="true"></span>'; } break;
+                        case 4: for($i=1 ; $i<=4 ; $i++){ echo '<span class="glyphicon glyphicon-star" aria-hidden="true"></span>'; } break;
+                        case 5: for($i=1 ; $i<=5 ; $i++){ echo '<span class="glyphicon glyphicon-star" aria-hidden="true"></span>'; } break;
+                    } ?>
+                </li>
+            </ul>
         </div>
-        <p><?php echo $date_rec ?></p>
+        <p>Publié le <?php echo $date_rec ?>.</p>
         <p class="sous-titre">Ingrédients :</p>
         <ul>
             <?php foreach($quantites_des_ingredients as $quantite_pour_un_ingredient){
-                $lib_ing     = $quantite_pour_un_ingredient['lib_ing'];
-                $quantite    = $quantite_pour_un_ingredient['quantite'];
-                echo '<li>' . $lib_ing . '(' . $quantite . ')</li>'; } ?>
+                $quantite     = $quantite_pour_un_ingredient['quantite'];
+                $libelle_ing  = $quantite_pour_un_ingredient['lib_ing'];
+                echo '<li>' . $libelle_ing . ' (' . $quantite . ')</li>';} 
+            ?>
         </ul>
         <p class="sous-titre">Préparation :</p>
         <p><?php echo $texte ?></p>
     </div>
 </div>
-<?php    
-}
-?>
 
 
-<!--Je pense qu'on n'en a pas besoin -->  
-<!--
-    foreach($les_ingredients as $un_ingredient){
-        $id_ing      = $un_ingredient['id_ing'];
-        $lib_ing     = $un_ingredient['lib_ing'];
-    } -->    
+
+     

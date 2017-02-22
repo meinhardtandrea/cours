@@ -40,9 +40,6 @@ switch ( $uc){
     case 'gestionCompte':
         include "controleurs/c_gestionCompte.php"; break;
     
-//Fiche recette
-    case 'voirRecette':
-        include "controleurs/c_voirRecette.php"; break;
     }
 
 include "vues/v_pied.php";

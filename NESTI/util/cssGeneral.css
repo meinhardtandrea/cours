@@ -22,11 +22,13 @@ h2 {
 .chapo {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .sous-titre {
-
+   font-family: 'Open Sans', sans-serif;
+   font-weight: bold;
+   font-size: 18px;
 }
 
 p {
@@ -35,6 +37,11 @@ p {
     font-size: 16px;
 }
 
+li {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: lighter;
+   font-size: 16px; 
+}
 .button_inscription {
     background-color: #F09D9D;
     height: 2.4em;

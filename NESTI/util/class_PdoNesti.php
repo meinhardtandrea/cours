@@ -43,7 +43,7 @@ class PdoNesti {
     
     public function enregistrerLogin($nom,$prenom,$civ,$adresse,$cp,$ville,$login,$tel,$login,$mdp_hash){
         $requete  = "INSERT INTO client (nom_cli,prenom_cli,civ_cli,adr_cli,cp_cli,ville_cli,email_cli,tel_cli,login_cli,mdp_cli) ";
-        $requete .= "VALUES ('$nom','$prenom','$civ','$adresse','$cp','$ville','$login','$tel','$login','$mdp_hash')";
+        $requete .= "VALUES ('$nom','$prenom','$civ','$adresse','$cp','$ville','$login','$tel','$login','$mdp_hash');";
         $resultat = $this->_bdd->prepare($requete);
         $resume = $resultat->execute();
         return $resume;
@@ -60,29 +60,18 @@ class PdoNesti {
     
     
     public function getCategories_Ingredients(){
-        $requete  = 'SELECT * FROM cat_ingredient';
+        $requete  = 'SELECT * FROM cat_ingredient;';
         $resultat = $this->_bdd->prepare($requete);
         $resultat->execute();
         
         $afficher = $resultat->fetchAll();
         return $afficher;
-    }
-    /** Je pense qu'on n'en a pas besoin. 
-     *  Appel de cette fonction dans c_gestionRecettes ligne 16
-     *  Affichage des données dans v_Fiche_Recette ligne ligne 52
-     * 
-    public function getIngredients($id_recette){
-        $requete  = "SELECT * FROM ingredient WHERE id_rec = '$id_recette';";
-        $resultat = $this->_bdd->prepare($requete);
-        $resultat->execute();
-        
-        $afficher = $resultat->fetchAll();
-        return $afficher;
-    }*/
+    } 
     public function getQuantite_Ingredient($id_recette){
-        $requete  = "SELECT lib_ing, quantite FROM mesure m ";
-        $requete .= "JOIN ingredient i on m.id_ing = i.id_ing";
-        $requete .= "WHERE id_rec = '$id_recette';";
+        $requete  = "SELECT mesure.quantite, ingredient.lib_ing ";
+        $requete .= "FROM nesti.mesure ";
+        $requete .= "JOIN nesti.ingredient on mesure.id_ing = ingredient.id_ing ";
+        $requete .= "WHERE mesure.id_rec = '$id_recette';";
         $resultat = $this->_bdd->prepare($requete);
         $resultat->execute();
                 
@@ -90,7 +79,7 @@ class PdoNesti {
         return $afficher;
     }
     public function getCategories_Recettes(){
-        $requete  = 'SELECT * FROM cat_recette';
+        $requete  = 'SELECT * FROM cat_recette;';
         $resultat = $this->_bdd->prepare($requete);
         $resultat->execute();
         
