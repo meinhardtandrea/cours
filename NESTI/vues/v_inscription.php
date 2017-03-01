@@ -4,18 +4,37 @@
 <p class="chapo">C'est gratuit (et ça le restera toujours)</p>
 
 <form name="form_inscription" method="POST" action="index.php?uc=login&action=enregistrer_inscription">
-    Civilité :                   <input type="radio"    name="civ"   value="Madame"> Madame
-                                 <input type="radio"    name="civ"   value="Mademoiselle"> Mademoiselle
-                                 <input type="radio"    name="civ"   value="Monsieur"> Monsieur <br><br>
-    Nom :                        <input type="text"     name="nom">     <br><br>
-    Prénom :                     <input type="text"     name="prenom">  <br><br>
-    Adresse :                    <input type="text"     name="adresse"> <br><br>
-    Code postal :                <input type="text"     name="cp">      <br><br>
-    Ville :                      <input type="text"     name="ville">   <br><br>
-    Téléphone :                  <input type="text"     name="tel">     <br><br>
-    Email :                      <input type="email"    name="login">   <br><br>
-    Mot de passe :               <input type="password" name="mdp">     <br><br>
-    Retapez votre mot de passe : <input type="password" name="re_mdp">  <br><br>
+    
+    Civilité :      <input type="radio"    name="civ"   value="Madame"> Madame
+                    <input type="radio"    name="civ"   value="Mademoiselle"> Mademoiselle
+                    <input type="radio"    name="civ"   value="Monsieur"> Monsieur <br><br>
+    
+    <label for="nom"> Nom : </label>
+    <input type="text" name="nom" id="nom"><br><br>
+    
+    <label for="prenom"> Prénom : </label>
+    <input type="text" name="prenom" id="prenom"><br><br>
+    
+    <label for="adresse"> Adresse : </label>
+    <input type="text" name="adresse" id="adresse"><br><br>
+    
+    <label for="cp"> Code postal : </label>
+    <input type="text" name="cp" id="cp"><br><br>
+    
+    <label for="ville"> Ville : </label>
+    <input type="text" name="ville" id="ville"><br><br>
+    
+    <label for="tel"> Téléphone : </label>
+    <input type="text" name="tel" id="tel"><br><br>
+    
+    <label for="login"> Email : </label>
+    <input type="email" name="login" id="login"><br><br>
+    
+    <label for="mdp"> Mot de passe : </label>
+    <input type="password" name="mdp" id="mdp"><br><br>
+    
+    <label for="re_mdp"> Retapez votre mot de passe : </label>
+    <input type="password" name="re_mdp" id="re_mdp"><br><br>
     
     <input type="submit" name="valider" value="Inscription">
 </form>

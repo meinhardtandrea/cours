@@ -12,6 +12,9 @@
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="assets/jquery-ui.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link href="assets/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<link href="assets/jquery-ui.theme.min.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>

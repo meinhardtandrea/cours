@@ -102,5 +102,12 @@ class PdoNesti {
         $afficher = $resultat->fetchAll();
         return $afficher;
     }
+    public function enregistrerRecette($titre_recette,$chapo_recette,$date,$nb_pers,$tps_prepa,$tps_cuisson,$difficulte,$text_recette,$id_cat_rec){
+        $requete  = "INSERT INTO recette (lib_rec,chapo_rec,date,nb_pers,tps_prepa,tps_cuisson,difficulte,texte,id_cat_rec) ";
+        $requete .= "VALUES ('$titre_recette','$chapo_recette','$date','$nb_pers','$tps_prepa','$tps_cuisson','$difficulte','$text_recette','$id_cat_rec');";
+        $resultat = $this->_bdd->prepare($requete);
+        $resume = $resultat->execute();
+        return $resume;
+    }
 }
 ?>
