@@ -1,15 +1,7 @@
 <?php
-$a= [
-    'lol',
-    'ça',
-    'ne',
-    'marche',
-    'pas',
-];
-
-$i= 0;
-while( isset($a[$i])){
-    $i++;
-}
-
-var_dump($i);
+$mon_string= "Pic<w<>>>cscqsc[[[ < lol";
+// nettoyage des carctères spéciaux "classiques" +-=!(){}[]^"~*?:\/
+$q= addcslashes ( $mon_string ,  '+-=!(){}[]^"~*?:\/' );
+// suppression < et >
+$q= preg_replace("#[><]#", "", $q);
+echo $q;
