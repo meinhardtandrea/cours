@@ -13,3 +13,21 @@ while( isset($a[$i])){
 }
 
 var_dump($i);
+
+
+
+
+
+
+
+
+$b= 'test';
+
+class Cool{
+    public function prout(){
+        var_dump($b);
+    }
+}
+
+$c= new Cool();
+$c->prout();
