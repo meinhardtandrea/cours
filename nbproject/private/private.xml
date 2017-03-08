@@ -1,10 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/meinhardt/cours/PortFolio/newhtml.html</file>
-            <file>file:/home/meinhardt/cours/lol.php</file>
+            <file>file:/D:/web/andrea/NESTI/util/class%20inutilisées/class_Client.php</file>
+            <file>file:/D:/web/andrea/NESTI/util/class%20inutilisées/class_Ingredient.php</file>
+            <file>file:/D:/web/andrea/NESTI/vues/v_Admin_Ingredient.php</file>
+            <file>file:/D:/web/andrea/NESTI/util/class%20inutilisées/class_Categories_Ingredients.php</file>
+            <file>file:/D:/web/andrea/NESTI/controleurs/c_gestionLogin.php</file>
+            <file>file:/D:/web/andrea/NESTI/vues/v_inscription.php</file>
+            <file>file:/D:/web/andrea/NESTI/util/Outils.php</file>
+            <file>file:/D:/web/andrea/NESTI/util/nesti.init.php</file>
+            <file>file:/D:/web/andrea/NESTI/util/class%20inutilisées/class_Media.php</file>
+            <file>file:/D:/web/andrea/NESTI/vues/v_message.php</file>
+            <file>file:/D:/web/andrea/NESTI/util/class%20inutilisées/class_Mesure.php</file>
+            <file>file:/D:/web/andrea/NESTI/util/class_PdoNesti.php</file>
+            <file>file:/D:/web/andrea/NESTI/controleurs/c_gestionCours.php</file>
+            <file>file:/D:/web/andrea/NESTI/controleurs/c_gestionAdmin.php</file>
+            <file>file:/D:/web/andrea/NESTI/controleurs/c_gestionCompte.php</file>
+            <file>file:/D:/web/andrea/NESTI/util/config.ini</file>
+            <file>file:/D:/web/andrea/NESTI/vues/v_bandeau.php</file>
+            <file>file:/D:/web/andrea/NESTI/util/class%20inutilisées/class_Recette.php</file>
+            <file>file:/D:/web/andrea/NESTI/vues/v_accueil.php</file>
+            <file>file:/D:/web/andrea/NESTI/vues/v_pied.php</file>
+            <file>file:/D:/web/andrea/NESTI/vues/v_entete.php</file>
+            <file>file:/D:/web/andrea/NESTI/vues/v_Categories_Recettes.php</file>
+            <file>file:/D:/web/andrea/NESTI/util/class%20inutilisées/class_Categories_Recettes.php</file>
+            <file>file:/D:/web/andrea/NESTI/vues/v_Admin_Cours.php</file>
+            <file>file:/D:/web/andrea/lol.php</file>
+            <file>file:/D:/web/andrea/NESTI/index.php</file>
+            <file>file:/D:/web/andrea/NESTI/controleurs/c_gestionRecettes.php</file>
+            <file>file:/D:/web/andrea/NESTI/controleurs/c_gestionIngredients.php</file>
         </group>
     </open-files>
 </project-private>
