@@ -1,7 +1,12 @@
+
 <?php
-$mon_string= "Pic<w<>>>cscqsc[[[ < lol";
-// nettoyage des carctères spéciaux "classiques" +-=!(){}[]^"~*?:\/
-$q= addcslashes ( $mon_string ,  '+-=!(){}[]^"~*?:\/' );
-// suppression < et >
-$q= preg_replace("#[><]#", "", $q);
-echo $q;
+function test() {
+    $foo = "valeur1";
+
+    echo '$GLOBALS["foo"] dans le contexte global : ' . $GLOBALS["foo"] . "<br>";
+    echo '$foo dans le contexte courant : ' . $foo . "<br>";
+}
+
+$foo = "valeur2";
+test();
+?>
