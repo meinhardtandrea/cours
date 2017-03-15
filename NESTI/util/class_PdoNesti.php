@@ -25,6 +25,14 @@ class PdoNesti {
         $this->_bdd = new PDO( 'mysql:host=' . $this->_host . ';dbname=' . $this->_dbName, $this->_user, $this->_password);
         $this->_bdd->query("SET CHARACTER SET utf8");
     }
+    
+    /**
+     * /!\ IMPORTANT
+     * Ceci ne sert à rien : lorsqu'une instance d'une classe est détruite 
+     *  (et donc que __destruct est appelé), ses variables n'existent plus (puisque elle-même non plus)
+     * Donc ça ne sert à rien de "vider" une variable d'un objet au moment de sa destruction.
+     * Tu peux supprimer cette variable.
+     */
     public function __destruct() {
         $this->_bdd = NULL;
     }
