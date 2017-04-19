@@ -1,14 +1,19 @@
 <?php
+
+namespace NESTI\Controleurs {
+    
+    class gestionAdmin {
+        
+        public function voir_Categories_Admin() {}
+        
+        public function enregistrer_recette() {}
+        
+    }
+}
 $action = $_REQUEST['action'];
 
 switch ($action){
     
-    case 'nouveau':
-        break;
-    case 'modifier':
-        break;
-    case 'supprimer':
-        break;
     case 'voir_Categories_Admin':
         include "vues/v_Categories_Admin.php" ;
         $categorie_admin = $_REQUEST['categorie'];

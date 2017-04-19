@@ -1,5 +1,19 @@
 <?php
 
+namespace NESTI\Controleurs {
+        
+    class gestionLogin {
+        
+        public function je_veux_minscrire() {}
+        
+        public function je_veux_me_connecter() {}
+        
+        public function enregistrer_inscription() {}
+        
+        public function valider_connexion() {}
+        
+    }
+}
 require_once "util/Outils.php";
 
 $action = $_REQUEST['action'];

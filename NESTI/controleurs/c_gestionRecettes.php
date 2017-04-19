@@ -1,4 +1,15 @@
 <?php
+
+namespace NESTI\Controleurs {
+        
+    class gestionRecettes {
+        
+        public function voir_Categories_Recettes(){}
+        
+        public function voir_Recettes(){}
+        
+    }
+}
 $action = $_REQUEST['action'];
 
 switch ($action){
