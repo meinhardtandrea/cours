@@ -98,16 +98,17 @@
         <div class="w3-content w3-container w3-padding-64" id="cursus">
             <h3 class="w3-center">CURSUS</h3>
             <p>Précédemment responsable marketing d’une start-up spécialisée dans les biocomposites à destination du bâtiment et de l’éco-construction, je suis actuellement en reconversion professionnelle. J’ai en effet le projet de devenir développeuse informatique.</p>
-            <p class="w3-center"><em>Les raisons de ma reconversion professionnelle</em></p>
-            <ul class="w3-center">
-                <li></li>
-                <li>Le manque d'offres adaptées à mon profil</li>
-            </ul>
-            <p></p>
             <div class="w3-row">
-                <div class="w3-col m6 w3-center w3-padding-large">
-                    <p><b><i class="fa fa-user w3-margin-right"></i>Andréa MEINHARDT</b></p><br>
-                    <img src="andrea.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+
+                <!-- 1ere partie : les raisons de ma reconversion professionnelle -->
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <p class="w3-center"><em>Les raisons de ma reconversion professionnelle</em></p>
+                    <ul>
+                        <li>La start-up pour laquelle je travaillais a fermé ses portes.</li>
+                        <li>Mon choix de rester à Montpellier et le manque d'offres adaptées à mon profil m'ont poussée à trouver d'autres voies que celles du marketing et de la communication.</li>
+                        <li>Mon envie de me spécialiser dans la conception et le développement informatique.</li>
+                        <li>Le soutien de mon mari et de mes proches dans mon projet m'ont beaucoup confortée dans ce choix de reconversion professionnelle.</li>
+                    </ul>
                 </div>
 
                 <!-- 2eme partie : le projet professionnel -->
@@ -115,48 +116,62 @@
                     <p class="w3-center"><em>Mon projet professionnel</em></p>
                     <p>Je souhaite exercer ce métier durant 3 à 5 années, le temps de rassembler les fonds nécessaires à la création de ma propre web agency, de développer mon réseau et surtout d’acquérir suffisamment d’expérience terrain.</p>
                     <p>Pour réaliser ce projet ambitieux, j’ai intégré une formation qualifiante – à savoir un BTS Services informatiques aux organisations option B solutions logicielles et applications métiers (SLAM) – qui me permet d’acquérir toutes les connaissances nécessaires dans le domaine de la conception et du développement informatique.</p>
-                    <p class="w3-center"><a href="cv.html" target="_blank"><button class="w3-button w3-padding-large" style="margin-top:64px">CONSULTER MON CV</button></a></p>
+                </div>
+
+                <!-- 3eme partie : le CV -->
+                <div class="w3-center">
+                    <a href="cv.html" target="_blank"><button class="w3-button w3-padding-large" style="margin-top:64px">CONSULTER MON CV</button></a>
                 </div>
             </div>
-
-
-            <!-- Container (Section Compétences) -->
-            <div class="w3-content w3-container w3-padding-64" id="competences">
-                <h3 class="w3-center">COMPÉTENCES</h3>
-                <p class="w3-large w3-center w3-padding-16">Mes domaines de compétences:</p>
-                <p class="w3-wide"><i class="fa fa-laptop"></i>Programmation</p>
-                <div class="w3-light-grey">
-                    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:65%">65%</div>
-                </div>
-                <p class="w3-wide"><i class="fa fa-photo"></i>Web Design</p>
-                <div class="w3-light-grey">
-                    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-                </div>
-                <p class="w3-wide"><i class="fa fa-laptop"></i>Marketing</p>
-                <div class="w3-light-grey">
-                    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-                </div>
-                <div class="w3-center">
-                <a href="assets/grille.xls" target="_blank"><button class="w3-button w3-padding-large" style="margin-top:64px">CONSULTER MA GRILLE DE COMPÉTENCES</button></a>
-                </div>
-                </div>
         </div>
         <div class="w3-row w3-center w3-dark-grey w3-padding-16">
             <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">14+</span><br>
-                Partners
+                <span class="w3-xlarge"></span><br>
             </div>
             <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">55+</span><br>
-                Projets réalisés
+                <span class="w3-xlarge"></span><br>
             </div>
             <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">89+</span><br>
-                Happy Clients
+                <span class="w3-xlarge"></span><br>
             </div>
             <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">150+</span><br>
-                Rencontres
+                <span class="w3-xlarge"></span><br>
+            </div>
+        </div>
+        
+        <!-- Container (Section Compétences) -->
+        <div class="w3-content w3-container w3-padding-64" id="competences">
+            <h3 class="w3-center">COMPÉTENCES</h3>
+            <p class="w3-large w3-center w3-padding-16">Mes domaines de compétences:</p>
+            <p class="w3-wide"><i class="fa fa-laptop"></i>Marketing</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-photo"></i>Web Design</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-laptop"></i>Programmation</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:65%">65%</div>
+            </div>
+            <div class="w3-center">
+                <a href="assets/grille.xls" target="_blank"><button class="w3-button w3-padding-large" style="margin-top:64px"> CONSULTER MA GRILLE DE COMPÉTENCES INFORMATIQUES </button></a>
+            </div>
+        </div>
+
+        <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge"></span><br>
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge"></span><br>
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge"></span><br>
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge"></span><br>
             </div>
         </div>
 
@@ -169,8 +184,8 @@
 
         <!-- Container (Section Projets) -->
         <div class="w3-content w3-container w3-padding-64" id="projets">
-            <h3 class="w3-center">MY WORK</h3>
-            <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+            <h3 class="w3-center">RÉALISATIONS</h3>
+            <p class="w3-center"><em>Vous trouverez ci-dessous les travaux que j'ai réalisé au cours de l'année.<br> Cliquez sur les images.</em></p><br>
 
             <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
             <div class="w3-row-padding w3-center">
