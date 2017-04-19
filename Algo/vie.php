@@ -21,19 +21,28 @@ function generer($leMonde){
 }
 
 
+
 function calculer($tableau, $ligne, $colonne){
     $n = 0;
     for( $i = $ligne-1 ; $i <= $ligne+1 ; $i++){
         for( $j = $colonne-1 ; $j <= $colonne+1 ; $j++){
-            $n += $tableau[$i][$j];
+            $n += $tableau[$ligne][$colonne];
         }
     }
-    $n -= $tableau[$i][$j];
+    $n -= $tableau[$ligne][$colonne];
     return $n;
 }
 
 
+
 $res = generer($leMonde);
+
+
+
+function evolution(){
+    
+}
+
 
 
 echo '<table>';
@@ -46,8 +55,8 @@ foreach($res as $v1){
 }
 echo '</table>';
 
-$plu = calculer($tableau, (int)12, (int)12);
-echo $plu . 'nbjj';
+$NB_de_vies = calculer($tableau, (int)2, (int)2);
+echo $NB_de_vies ;
 
 
 

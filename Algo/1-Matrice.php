@@ -17,7 +17,7 @@ if( isset( $_POST[ 'taille_matrice'])){
 
 <form name="etap2"method="post" action="1-Matrice.php">
 
-<table>
+<table> 
     <?php for( $i=0; $i<$nb_lignes ; $i++){ ?>    
     <tr>
         <?php for( $j=0; $j<$nb_colonnes ; $j++){ ?>
@@ -56,37 +56,3 @@ if( isset( $_POST[ 'matrice'])){
     </table>
 <?php } ?>
 
-<?php
-
-$tab1[0][0] = '1';
-$tab1[0][1] = '2';
-$tab1[1][0] = '3';
-$tab1[1][1] = '4';
-$tab2[0][0] = '4';
-$tab2[0][1] = '3';
-$tab2[1][0] = '2';
-$tab2[1][1] = '1';
-
-$nbLignes1 = 2;
-$nbLignes2 = 2;
-$nbColonnes1 = 2;
-$nbColonnes2 = 2;
-
-$tabRes = array();
-
-echo '<table>';
-for ($i = 0 ; $i < $nbLignes1; $i++) {
-    $tabRes[$i] = array();
-    echo '<tr>';
-    for ($j = 0; $j < $nbColonnes2; $j++) {
-        $tabRes[$i][$j] = 0;
-        for ($k = 0; $k < $nbColonnes1; $k++) {
-            $tabRes[$i][$j] += $tab1[$i][$k] * $tab2[$k][$j];
-            
-        }
-        echo '<td>' . $tabRes[$i][$j] . '</td>';
-        
-        }
-        echo '</tr>';
-    }
-echo '</table>';
