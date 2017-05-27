@@ -1,0 +1,125 @@
+Exercice 1
+<cave>
+  <bouteille>
+    <marque>Cristaline</marque>
+    <composition>
+      <ion type="positif">calcium 71mg/l</ion>
+      <ion type="positif">magnésium 5,5mg/l</ion>
+      <ion type="negatif">chlorure 20mg/l</ion>
+      <ion type="negatif">nitrate 1mg/l</ion>
+      <autre type="metal">fer</autre>
+    </composition>
+    <source>
+      <ville>St-Cyr la Source</ville>
+      <departement>Loiret</departement>
+    </source>
+    <code_barre>3274080005003</code_barre>
+    <contenance unit="cl">150</contenance>
+    <ph>7,45</ph>
+  </bouteille>
+  <bouteille>
+    <marque>Cristaline</marque>
+    <composition>
+      <ion type="positif">calcium 98mg/l</ion>
+      <ion type="positif">magnésium 4mg/l</ion>
+      <ion type="negatif">chlorure 3,6mg/l</ion>
+      <ion type="negatif">nitrate 2mg/l</ion>
+    </composition>
+    <source>
+      <ville>Aurèle</ville>
+      <departement>Alpes Maritimes</departement>
+    </source>
+    <code_barre>3268840001008</code_barre>
+    <contenance unit="cl">50</contenance>
+    <ph>7,4</ph>
+  </bouteille>
+ 
+  <bouteille>
+    <marque>Volvic</marque>
+    <composition>
+      <ion type="positif">calcium 11,5mg/l</ion>
+      <ion type="positif">magnésium 8mg/l</ion>
+      <ion type="negatif">chlorure 13,5mg/l</ion>
+      <ion type="negatif">nitrate 6,3mg/l</ion>
+    </composition>
+    <source>
+      <ville>Volvic</ville>
+      <departement>Puy-de-Dôme</departement>
+    </source>
+    <code_barre>3057640117008</code_barre>
+    <contenance unit="cl">50</contenance>
+    <ph>7</ph>
+  </bouteille>
+</cave>
+
+
+------------------------------------------------------------------------------
+Exercice 2
+<nuages>
+  <nuage>
+    <nom>
+      altocumulus
+      <espece>lenticularis</espece>
+      <espece>stratiformis</espece>
+      <espece>castellanus</espece>
+      <espece>flocus</espece>
+    </nom>
+    <altitude max="6000" min="2000"/>
+    <hydrometeores>Aucun.</hydrometeores>
+  </nuage>
+  <nuage>
+    <nom>
+      cirrus
+      <espece>flocus</espece>
+      <espece>castellanus</espece>
+      <espece>spissatus</espece>
+      <espece>uncinus</espece>
+      <espece>fibratus</espece>
+    </nom>
+    <altitude max="12000" min="6000"/>
+    <hydrometeores>Aucun.</hydrometeores>
+  </nuage>
+  <nuage>
+    <nom>
+      cirrocumulus
+      <espece>lenticularis</espece>
+      <espece>stratiformis</espece>
+      <espece>flocus</espece>
+      <espece>castellanus</espece>
+    </nom>
+    <altitude max="7000" min="5000"/>
+    <hydrometeores>Aucun.</hydrometeores>
+  </nuage>
+  <nuage>
+    <nom>
+      cumulus
+	  <espece>fractus</espece>
+      <espece>humilis</espece>
+      <espece>mediocris</espece>
+      <espece>congestus</espece>
+    </nom>
+    <altitude max="8000" min="200"/>
+    <hydrometeores>Aucun en général.</hydrometeores>
+  </nuage>
+  <nuage>
+    <nom>
+      strato-cumulus
+	  <espece>stratiformis</espece>
+      <espece>lenticularis</espece>
+      <espece>castellanus</espece>
+    </nom>
+    <altitude max="2000" min="0"/>
+    <hydrometeores>Aucun.</hydrometeores>
+  </nuage>
+  <nuage>
+    <nom>
+      cumulonimbus
+	  <espece>calvus</espece>
+      <espece>capillatus</espece>
+      <espece>mammatus</espece>
+    </nom>
+    <altitude max="18000" min="300"/>
+    <hydrometeores>Averses (parfois de neige, de grésil ou de grêle).</hydrometeores>
+  </nuage>
+</nuages>
+

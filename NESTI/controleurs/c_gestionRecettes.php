@@ -1,26 +1,19 @@
 <?php
-
-namespace NESTI\Controleurs {
-        
-    class gestionRecettes {
-        
-        public function voir_Categories_Recettes(){}
-        
-        public function voir_Recettes(){}
-        
-    }
-}
+//namespace NESTI\Controleurs {
+//        
+//    class gestionRecettes {
+//        
+//        public function voir_Categories_Recettes(){}
+//        
+//        public function voir_Recettes(){}
+//        
+//    }
+//}
 $action = $_REQUEST['action'];
-
 switch ($action){
-    
-    case 'voir_Categories_Recettes':
-        $les_categories = $pdo->getCategories_Recettes();
-        include "vues/v_Categories_Recettes.php"; break;
     
     case 'voir_Recettes':
         $les_categories = $pdo->getCategories_Recettes();
-        include "vues/v_Categories_Recettes.php";
         
         $categorie_recette = $_REQUEST['categorie'];
         
@@ -34,7 +27,7 @@ switch ($action){
                     $les_recettes = $pdo->getRecettes($id_categorie_recette);
                     
                     foreach ($les_recettes as $une_recette){
-                        $id_recette   = $une_recette['id_rec'];
+                        $id_recette  = $une_recette['id_rec'];
                         $titre_rec   = $une_recette['lib_rec'];
                         $chapo_rec   = $une_recette['chapo_rec'];
                         $date_rec    = $une_recette['date'];
@@ -53,4 +46,3 @@ switch ($action){
         }
 }
 ?>
-

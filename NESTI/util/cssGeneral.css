@@ -16,7 +16,7 @@ h2 {
     font-family: 'Amatic SC', cursive;
     font-weight: lighter;
     font-size: 60px;
-    color : #000000;
+    color: #000000;
 }
 
 .chapo {
@@ -42,6 +42,7 @@ li {
    font-weight: lighter;
    font-size: 16px; 
 }
+
 .button_inscription {
     background-color: #F09D9D;
     height: 2.4em;
@@ -179,4 +180,3 @@ li {
 #img_recette {
     
 }
-

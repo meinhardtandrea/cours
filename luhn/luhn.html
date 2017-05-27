@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fr">
+    <title>CB</title>
+    <meta http-equiv="Content-Language" content="fr">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <body>
+
+        <header class="w3-container w3-teal">
+            <h1>Payer avec ma carte bancaire</h1>
+        </header>
+
+        <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:50px">
+
+            <form class="w3-container w3-card-4">
+                <p>
+                    <input type="button" onclick="cb()" value="Payer avec ma carte bancaire" class="w3-button w3-section w3-teal w3-ripple">
+                </p>
+            </form>
+ 
+        </div>
+    <script>
+        function cb() {
+            var nbre = window.prompt('Saisissez votre numéro de CB à 16 chiffres (sans espace): ');
+            var cle = 0;
+            for (var i = 0; i < 16; i++) {
+                var chiffre = nbre[i];
+                chiffre = parseInt(chiffre);
+                if (i % 2 == 0) {
+                    var pdt = chiffre * 2;
+                    if (pdt > 9) {
+                        var dizaine = 1;
+                        var unite = pdt - 10;
+                        var plus = dizaine + unite;
+                        cle = cle + plus;
+                    } else {
+                        cle = cle + pdt;
+                    }
+                } else {
+                    pdt = chiffre * 1;
+                    cle = cle + pdt;
+                }
+            }
+            window.alert('Votre clé = ' + cle);
+            if (cle % 10 == 0) {
+                window.alert('La clé est un multiple de 10. Votre numéro de carte est valide. ');
+            } else {
+                window.alert("La clé n'est pas un multiple de 10. Votre numéro de carte n'est pas valide. ");
+            }
+}
+    </script>
+    </body>
+</html>

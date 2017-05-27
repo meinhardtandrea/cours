@@ -1,0 +1,12 @@
+article
+{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 0 20px 0;
+}
+
+footer
+{
+    margin: 20px 0 10px 0;
+    text-align: center;
+}

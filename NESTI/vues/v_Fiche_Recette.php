@@ -2,8 +2,8 @@
 
 <div id="fiche_recette">
     
-    <div id="img_recette">
-        <img id="img_recette
+    <div>
+        <img class="w3-image" style="display:block;margin:auto" width="800"
             <?php  foreach($les_images as $une_image){
                 $id_img      = $une_image['id_med'];
                 $lib_img     = $une_image['lib_med'];
@@ -16,7 +16,7 @@
         <p class="chapo"><?php echo $chapo_rec ?></p>
         <div>
             <ul>
-                <li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Pour <?php echo $nb_pers ?> personnes</li>
+                <li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Pour <?php echo $nb_pers ?> personne(s)</li>
                 <li><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Temps de préparation : <?php echo $tps_prepa ?></li>
                 <li><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Temps de cuisson : <?php echo $tps_cuisson ?></li>
                 <li>Difficulté : 
@@ -37,14 +37,12 @@
             <?php foreach($quantites_des_ingredients as $quantite_pour_un_ingredient){
                 $quantite     = $quantite_pour_un_ingredient['quantite'];
                 $libelle_ing  = $quantite_pour_un_ingredient['lib_ing'];
-                echo '<li>' . $libelle_ing . ' (' . $quantite . ')</li>';} 
+                echo '<li>' . $quantite . ' ' . $libelle_ing . '</li>';} 
             ?>
         </ul>
         <p class="sous-titre">Préparation :</p>
         <p><?php echo $texte ?></p>
     </div>
 </div>
-
-
-
-     
+<hr>
+</div>

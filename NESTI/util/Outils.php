@@ -1,5 +1,4 @@
 <?php
-
 namespace Outils {
     
     function hashMdp($mdp){
@@ -9,6 +8,10 @@ namespace Outils {
             $mdp = hash('sha256',$mdp); 
             return $mdp;
         }
+    }
+    
+    function decryptMdp($mdp_hash){
+        
     }
 }
 ?>

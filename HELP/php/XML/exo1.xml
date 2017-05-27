@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<stock>
+    <bouteille>
+    <source>
+        <marque>Cristaline</marque>
+        <ville>St-Cyr la source</ville>
+        <region>Loiret</region>
+    </source>
+    <composition>
+        <ion type="positif" nom="calcium">71 mg</ion>
+        <ion type="positif" nom="magnesium">5.5 mg</ion>
+        <ion type="negatif" nom="chlorure">20 mg</ion>
+        <ion type="negatif" nom="nitrate">1 mg</ion>
+        <particules>fer</particules>
+    </composition>
+    <references>
+        <codebarre>3274080005003</codebarre>
+        <ph>7.45</ph>
+        <contenance>150cl</contenance>
+    </references>
+    </bouteille>
+    
+    <bouteille>
+    <source>
+        <marque>Cristaline</marque>
+        <ville>Aurèle</ville>
+        <region>Alpes Maritimes</region>
+    </source>
+    <composition>
+        <ion type="positif" nom="calcium">98 mg</ion>
+        <ion type="positif" nom="magnesium">4 mg</ion>
+        <ion type="negatif" nom="chlorure">3.6 mg</ion>
+        <ion type="negatif" nom="nitrate">2 mg</ion>
+        <particules>silice</particules>
+    </composition>
+    <references>
+        <codebarre>3268840001008</codebarre>
+        <ph>7.4</ph>
+        <contenance>50cl</contenance>
+    </references>
+    </bouteille>
+    
+    <bouteille>
+    <source>
+        <marque>Volvic</marque>
+        <ville>Volvic</ville>
+        <region>Puy-de-Dôme</region>
+    </source>
+    <composition>
+        <ion type="positif" nom="calcium">11.5 mg</ion>
+        <ion type="positif" nom="magnesium">8.0 mg</ion>
+        <ion type="negatif" nom="chlorure">13.5 mg</ion>
+        <ion type="negatif" nom="nitrate">6.3 mg</ion>
+        <particules>silice</particules>
+    </composition>
+    <references>
+        <codebarre>3057640117008</codebarre>
+        <ph>7</ph>
+        <contenance>50cl</contenance>
+    </references>
+    </bouteille>
+</stock>

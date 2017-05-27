@@ -1,0 +1,129 @@
+#conteneur1 {
+    
+}
+
+.col1 {
+    border: 2px solid #FF1493; /*Bordure rose*/
+    padding: 5px;
+    width: 12.5%;
+}
+
+.col2 {
+    border: 2px solid #FF1493; /*Bordure rose*/
+    padding: 5px;
+    width: 25%;
+}
+
+.col3 {
+    border: 2px solid #FF1493; /*Bordure rose*/
+    padding: 5px;
+    width: 37.5%;
+}
+
+.col4 {
+    border: 2px solid #FF1493; /*Bordure rose*/
+    padding: 5px;
+    width: 50%;
+}
+
+.col5 {
+    border: 2px solid #FF1493; /*Bordure rose*/
+    padding: 5px;
+    width: 62.5%;
+}
+
+.col6 {
+    border: 2px solid #FF1493; /*Bordure rose*/
+    padding: 5px;
+    width: 75%;
+}
+
+.col7 {
+    border: 2px solid #FF1493; /*Bordure rose*/
+    padding: 5px;
+    width: 87.5%;
+}
+
+.col8 {
+    border: 2px solid #FF1493; /*Bordure rose*/
+    padding: 5px;
+    width: 100%;
+}
+
+#conteneur2 {
+    
+}
+
+.c1 {
+    border: 2px solid #008000; /*Bordure verte*/
+    padding: 5px;
+    width: 8.33%;
+}
+
+.c2 {
+    border: 2px solid #008000; /*Bordure verte*/
+    padding: 5px;
+    width: 16.67%;
+}
+
+.c3 {
+    border: 2px solid #008000; /*Bordure verte*/
+    padding: 5px;
+    width: 25%;
+}
+
+.c4 {
+    border: 2px solid #008000; /*Bordure verte*/
+    padding: 5px;
+    width: 33.33%;
+}
+
+.c5 {
+    border: 2px solid #008000; /*Bordure verte*/
+    padding: 5px;
+    width: 41.67%;
+}
+
+.c6 {
+    border: 2px solid #008000; /*Bordure verte*/
+    padding: 5px;
+    width: 50%;
+}
+
+.c7 {
+    border: 2px solid #008000; /*Bordure verte*/
+    padding: 5px;
+    width: 58.33%;
+}
+
+.c8 {
+    border: 2px solid #008000; /*Bordure verte*/
+    padding: 5px;
+    width: 66.67%;
+}
+
+.c9 {
+    border: 2px solid #008000; /*Bordure verte*/
+    padding: 5px;
+    width: 75%;
+}
+
+.c10 {
+    border: 2px solid #008000; /*Bordure verte*/
+    padding: 5px;
+    width: 83.33%;
+}
+
+.c11 {
+    border: 2px solid #008000; /*Bordure verte*/
+    padding: 5px;
+    width: 91.67%;
+}
+
+.c12 {
+    border: 2px solid #008000; /*Bordure verte*/
+    padding: 5px;
+    width: 100%;
+}
+
+

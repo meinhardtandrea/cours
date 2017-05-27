@@ -56,7 +56,7 @@ class PdoLafleur
 */
 	public function getLesCategories()
 	{
-		$req = "select * from categorie";
+		$req = "select * from categorie;";
 		$res = PdoLafleur::$monPdo->query($req);
 		$lesLignes = $res->fetchAll();
 		return $lesLignes;
@@ -72,7 +72,7 @@ class PdoLafleur
 
 	public function getLesProduitsDeCategorie($idCategorie)
 	{
-	    $req="select * from produit where idCategorie = '$idCategorie'";
+	    $req="select * from produit where idCategorie = '$idCategorie';";
 		$res = PdoLafleur::$monPdo->query($req);
 		$lesLignes = $res->fetchAll();
 		return $lesLignes; 
@@ -83,19 +83,16 @@ class PdoLafleur
  * @param $desIdProduit tableau d'idProduits
  * @return un tableau associatif 
 */
-	public function getLesProduitsDuTableau($desIdProduit)
-	{
-		$nbProduits = count($desIdProduit);
-		$lesProduits=array();
-		if($nbProduits != 0)
-		{
-			foreach($desIdProduit as $unIdProduit)
-			{
-				$req = "select * from produit where id = '$unIdProduit'";
-				$res = PdoLafleur::$monPdo->query($req);
-				$unProduit = $res->fetch();
-				$lesProduits[] = $unProduit;
-			}
+	public function getLesProduitsDuTableau( $desIdProduit) {
+		$nbProduits  = count( $desIdProduit);
+		$lesProduits = array();
+		if($nbProduits != 0) {
+                    foreach( $desIdProduit as $unIdProduit) {
+                        $req = "SELECT * FROM produit WHERE idProduit = '$unIdProduit';";
+                        $res = PdoLafleur::$monPdo->query($req);
+                        $unProduit = $res->fetch();
+                        $lesProduits[] = $unProduit;
+                    }
 		}
 		return $lesProduits;
 	}
@@ -113,29 +110,34 @@ class PdoLafleur
  * @param $lesIdProduit
  
 */
-	public function creerCommande($nom,$rue,$cp,$ville,$mail, $lesIdProduit )
-	{
-		$req = "select max(id) as maxi from commande";
-		echo $req."<br>";
+	public function creerCommande($nom, $rue, $cp, $ville, $mail, $lesIdProduit, $totalCommande) {
+            $req = "SELECT max(idCommande) as maxi FROM commande ;";
+            $res = PdoLafleur::$monPdo->query($req);
+            $laLigne = $res->fetch();
+            $maxi = $laLigne['maxi'] ;
+            $maxi++;
+            $idCommande = $maxi;
+
+            date_default_timezone_set( 'Europe/Paris');
+            $date = date( 'Y-m-d');
+            $req  = "INSERT INTO commande";
+            $req .= " VALUES ('$idCommande','$date','$nom','$rue','$cp','$ville','$mail','$totalCommande');";
+            $res = PdoLafleur::$monPdo->exec($req);
+            
+            foreach( $lesIdProduit as $unIdProduit) {
+                $req = "INSERT INTO contenir (idProduit, idCommande) ";
+                $req .= " VALUES ('$unIdProduit','$idCommande');";
+                $res = PdoLafleur::$monPdo->exec($req);
+            }
+
+	}
+        
+        public function getMdp( $identifiant) {
+		$req = "SELECT mdp FROM administrateur WHERE login = '$identifiant';";
 		$res = PdoLafleur::$monPdo->query($req);
-		$laLigne = $res->fetch();
-		$maxi = $laLigne['maxi'] ;
-		$maxi++;
-		$idCommande = $maxi;
-		echo $idCommande."<br>";
-		echo $maxi."<br>";
-		$date = date('Y/m/d');
-		$req = "insert into commande values ('$idCommande','$date','$nom','$rue','$cp','$ville','$mail')";
-		echo $req."<br>";
-		$res = PdoLafleur::$monPdo->exec($req);
-		foreach($lesIdProduit as $unIdProduit)
-		{
-			$req = "insert into contenir values ('$idCommande','$unIdProduit')";
-			echo $req."<br>";
-			$res = PdoLafleur::$monPdo->exec($req);
-		}
-		
-	
+		$data = $res->fetch();
+		$mdp_dans_bdd = $data[ 'mdp'] ;
+		return $mdp_dans_bdd;
 	}
 }
 ?>

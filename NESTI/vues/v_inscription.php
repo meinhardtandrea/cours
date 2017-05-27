@@ -1,4 +1,5 @@
 <!--Formulaire d'inscription-->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:50px;margin-bottom:50px">
 <h2>Inscription</h2>
 
 <p class="chapo">C'est gratuit (et ça le restera toujours)</p>
@@ -38,3 +39,4 @@
     
     <input type="submit" name="valider" value="Inscription">
 </form>
+</div>

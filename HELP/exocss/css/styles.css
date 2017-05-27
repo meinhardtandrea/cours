@@ -1,0 +1,174 @@
+* {
+margin:0;
+padding:0;
+}
+
+body 
+{
+font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+#header
+{
+margin: auto;
+position: relative;
+width: 600px;
+}
+
+nav ul
+{
+list-style-type: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+nav li
+{
+display: block;
+width: 140px;
+height: 32px;
+color: #000;
+}
+
+nav li:nth-child(even)
+{
+display: block;
+width: 140px;
+height: 32px;
+color: green;
+}
+
+
+nav li a
+{
+display: block;
+width: 140px;
+height: 32px;
+padding-top: 18px;
+color: #000;
+font-size: 12px;
+text-align: center ;
+font-weight: normal;
+text-decoration: none;
+}
+
+nav li a:hover, nav li a:focus, nav li a:active 
+{
+color: #fff;
+font-weight: bold;
+background-color: #356BB5;
+}
+
+nav ul li a#current
+{
+color: #fff;
+font-weight: bold;
+background-color: #2C5894;
+}
+
+div
+{
+position: absolute;
+width: 200px;
+height: 200px;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+border-radius: 20px;
+}
+
+.b1
+{
+margin-top: 20px;
+margin-left: 0px;
+background-color: #3973BF;
+z-index:10;
+}
+
+.b2
+{
+margin-top: 60px;
+margin-left: 40px;
+background-color: #356BB5;
+z-index:8;
+}
+
+.b3
+{
+margin-top: 100px;
+margin-left: 80px;
+background-color: #2C5894;
+z-index:6;
+}
+
+.b4
+{
+margin-top: 20px;
+margin-left: 400px;
+background-color: #3973BF;
+z-index:10;
+}
+
+.b5
+{
+margin-top: 60px;
+margin-left: 360px;
+background-color: #356BB5;
+z-index:8;
+}
+
+.b6
+{
+margin-top: 100px;
+margin-left: 320px;
+background-color: #2C5894;
+z-index:6;
+}
+
+.b7
+{
+margin-top: 420px;
+margin-left: 0px;
+background-color: #3973BF;
+z-index:10;
+}
+
+.b8
+{
+margin-top: 380px;
+margin-left: 40px;
+background-color: #356BB5;
+z-index:8;
+}
+
+.b9
+{
+margin-top: 340px;
+margin-left: 80px;
+background-color: #2C5894;
+z-index:6;
+}
+
+.b10
+{
+margin-top: 420px;
+margin-left: 400px;
+background-color: #3973BF;
+z-index:10;
+}
+
+.b11
+{
+margin-top: 380px;
+margin-left: 360px;
+background-color: #356BB5;
+z-index:8;
+}
+
+.b12
+{
+margin-top: 340px;
+margin-left: 320px;
+background-color: #2C5894;
+z-index:6;
+}

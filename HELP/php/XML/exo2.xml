@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<ciel>
+    <nuage>
+        <type>cumulonimbus</type>
+        <especes>
+        <nom>calvus</nom>
+        <nom>capillatus</nom>
+        <nom>mammatus</nom>
+        </especes>
+        <altitude>
+            <min>300m</min>
+            <max>18000m</max>
+        </altitude>
+        <hydrometeores>averses (parfois sous la forme de neige, de grésil ou de grêle)</hydrometeores>
+    </nuage>
+    
+    <nuage>
+        <type>altocumulus</type>
+        <especes>
+        <nom>lenticularis</nom>
+        <nom>stratiformis</nom>
+        <nom>castellanus</nom>
+        <nom>flocus</nom>
+        </especes>
+        <altitude>
+            <min>2000m</min>
+            <max>6000m</max>
+        </altitude>
+        <hydrometeores>non</hydrometeores>
+    </nuage>
+    
+    <nuage>
+        <type>cirrocumulus</type>
+        <especes>
+            <nom>lenticularis</nom>
+            <nom>stratiformis</nom>
+            <nom>castellanus</nom>
+            <nom>flocus</nom>
+        </especes>
+        <altitude>
+            <min>5000m</min>
+            <max>7000m</max>
+        </altitude>
+        <hydrometeores>non</hydrometeores>
+    </nuage>
+    
+    <nuage>
+        <type>cirrus</type>
+        <especes>
+            <nom>castellanus</nom>
+            <nom>flocus</nom>
+            <nom>spissatus</nom>
+            <nom>uncinus</nom>
+            <nom>fibratus</nom>
+        </especes>
+        <altitude>
+            <min>6000m</min>
+            <max>12000m</max>
+        </altitude>
+        <hydrometeores>non</hydrometeores>
+    </nuage>
+    
+    <nuage>
+        <type>cumulus</type>
+        <especes>
+            <nom>fractus</nom>
+            <nom>mediocris</nom>
+            <nom>humilis</nom>
+            <nom>congestus</nom>
+        </especes>
+        <altitude>
+            <min>200m</min>
+            <max>8000m</max>
+        </altitude>
+        <hydrometeores>non</hydrometeores>
+    </nuage>
+    
+    <nuage>
+        <type>strato-cumulus</type>
+        <especes>
+            <nom>stratiformis</nom>
+            <nom>castellanus</nom>
+            <nom>lenticularis</nom>
+        </especes>
+        <altitude>
+            <min>0m</min>
+            <max>2000m</max>
+        </altitude>
+        <hydrometeores>non</hydrometeores>
+    </nuage>
+</ciel>

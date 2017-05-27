@@ -13,7 +13,6 @@
             color: #777;
             line-height: 1.8;
         }
-
         /* Créer un effet Parallax */
         .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
             background-attachment: fixed;
@@ -21,34 +20,28 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-
         /* Première image (Accueil) */
         .bgimg-1 {
             background-image: url('assets/pf_pc.jpg');
             min-height: 100%;
         }
-
         /* Seconde image (Projets) */
         .bgimg-2 {
             background-image: url('assets/pf_projets.jpg');
             min-height: 400px;
         }
-
         /* Troisième image (Veille) */
         .bgimg-3 {
             background-image: url('assets/pf_veille.png');
             min-height: 400px;
         }
-
         /* Quatrième image (Contact) */
         .bgimg-4 {
             background-image: url('assets/pf_contact.jpg');
             min-height: 400px;
         }
-
         .w3-wide {letter-spacing: 10px;}
         .w3-hover-opacity {cursor: pointer;}
-
         /* Turn off parallax scrolling for tablets and phones */
         @media only screen and (max-device-width: 1024px) {
             .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
@@ -103,24 +96,19 @@
                 <!-- 1ere partie : les raisons de ma reconversion professionnelle -->
                 <div class="w3-col m6 w3-hide-small w3-padding-large">
                     <p class="w3-center"><em>Les raisons de ma reconversion professionnelle</em></p>
-                    <ul>
+                    <ul style="text-align: justify">
                         <li>La start-up pour laquelle je travaillais a fermé ses portes.</li>
                         <li>Mon choix de rester à Montpellier et le manque d'offres adaptées à mon profil m'ont poussée à trouver d'autres voies que celles du marketing et de la communication.</li>
                         <li>Mon envie de me spécialiser dans la conception et le développement informatique.</li>
-                        <li>Le soutien de mon mari et de mes proches dans mon projet m'ont beaucoup confortée dans ce choix de reconversion professionnelle.</li>
                     </ul>
+                    <p class="w3-left" style="text-align: justify"><em>Le soutien de mes proches dans mon projet m'ont beaucoup confortée dans ce choix de reconversion professionnelle.</em></p>
                 </div>
 
                 <!-- 2eme partie : le projet professionnel -->
                 <div class="w3-col m6 w3-hide-small w3-padding-large">
                     <p class="w3-center"><em>Mon projet professionnel</em></p>
-                    <p>Je souhaite exercer ce métier durant 3 à 5 années, le temps de rassembler les fonds nécessaires à la création de ma propre web agency, de développer mon réseau et surtout d’acquérir suffisamment d’expérience terrain.</p>
-                    <p>Pour réaliser ce projet ambitieux, j’ai intégré une formation qualifiante – à savoir un BTS Services informatiques aux organisations option B solutions logicielles et applications métiers (SLAM) – qui me permet d’acquérir toutes les connaissances nécessaires dans le domaine de la conception et du développement informatique.</p>
-                </div>
-
-                <!-- 3eme partie : le CV -->
-                <div class="w3-center">
-                    <a href="cv.html" target="_blank"><button class="w3-button w3-padding-large" style="margin-top:64px">CONSULTER MON CV</button></a>
+                    <p style="text-align: justify">Je souhaite exercer ce métier durant 3 à 5 années, le temps de rassembler les fonds nécessaires à la création de ma propre web agency, de développer mon réseau et surtout d’acquérir suffisamment d’expérience terrain.</p>
+                    <p style="text-align: justify">Pour réaliser ce projet ambitieux, j’ai intégré une formation qualifiante – à savoir un BTS Services informatiques aux organisations option B solutions logicielles et applications métiers (SLAM) – qui me permet d’acquérir toutes les connaissances nécessaires dans le domaine de la conception et du développement informatique.</p>
                 </div>
             </div>
         </div>
@@ -138,7 +126,50 @@
                 <span class="w3-xlarge"></span><br>
             </div>
         </div>
-        
+        <div class="w3-content w3-container w3-padding-64">
+            <h3 class="w3-center">QU'EST-CE QUE LE BTS SIO ?</h3>
+            <p style="text-align: justify">Le BTS SIO, Services Informatiques aux Organisations est une formation d'une durée de 2 ans qui permet de se former aux métiers de l'informatique (développement, système et réseaux).</p>
+            <div class="w3-row">
+                <!-- 1ere partie : L'option -->
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <p class="w3-center"><em>Mon BTS en 1 an au lieu de 2</em></p>
+                    <p style="text-align: justify">Si le BTS se déroule habituellement sur 2 ans, il existe une formule dite « année spéciale » ou « aménagement de formation » qui permet d’obtenir le diplôme en un an.</p>
+                    <p style="text-align: justify">Cet aménagement de formation s’adresse uniquement aux personnes ayant un diplôme de niveau III (bac + 2).
+                        Titulaire d'un master 2 en Stratégie Marketing, j'ai pu postuler et passer un entretien de motivation. 
+                        Après étude de ma candidature, le jury a confirmé mon entrée en formation dans le cadre du Programme Régional Qualifiant.</p>
+                </div>
+                <!-- 2eme partie : Ce que le BTS m'a apporté -->
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <p class="w3-center"><em>Ce que le BTS m'a apporté</em></p>
+                    <ul style="text-align: justify">
+                        <li>J'ai acquis les compétences nécessaires pour concevoir des produits articulés autour de ce qu'il est convenu d'appeler le "génie logiciel".</li>
+                        <li>Je suis capable d'analyser les besoins des utilisateurs.</li>
+                        <li>Je suis capable de rechercher et choisir des solutions adaptées.</li>
+                        <li>Je suis capable de concevoir des applications.</li>
+                        <li>Je suis capable de développer des applications.</li>
+                        <li>Je suis capable de mettre en oeuvre et réaliser la maintenance des programmes.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Bouton : le CV -->
+            <div class="w3-center">
+                <a href="cv.html" target="_blank"><button class="w3-button w3-padding-large" style="margin-top:64px">CONSULTER MON CV</button></a>
+            </div>
+        </div>
+        <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge"></span><br>
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge"></span><br>
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge"></span><br>
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge"></span><br>
+            </div>
+        </div>
         <!-- Container (Section Compétences) -->
         <div class="w3-content w3-container w3-padding-64" id="competences">
             <h3 class="w3-center">COMPÉTENCES</h3>
@@ -186,43 +217,66 @@
         <div class="w3-content w3-container w3-padding-64" id="projets">
             <h3 class="w3-center">RÉALISATIONS</h3>
             <p class="w3-center"><em>Vous trouverez ci-dessous les travaux que j'ai réalisé au cours de l'année.<br> Cliquez sur les images.</em></p><br>
-
             <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
             <div class="w3-row-padding w3-center">
                 <div class="w3-col m3">
-                    <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+                    <img src="assets/nesti.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Nesti">
                 </div>
 
                 <div class="w3-col m3">
-                    <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+                    <img src="assets/android.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Android">
                 </div>
 
                 <div class="w3-col m3">
-                    <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+                    <img src="assets/javascript.png" style="width:80%" onclick="onClick(this)" class="w3-hover-opacity" alt="Javascript">
                 </div>
 
                 <div class="w3-col m3">
-                    <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+                    <img src="assets/Calculette.png" style="width:75%" onclick="onClick(this)" class="w3-hover-opacity" alt="Calculette">
+                </div>
+            </div>
+            <div class="w3-row-padding w3-center w3-section">
+                <div class="w3-col m3">
+                    <img src="assets/lafleur.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="La Fleur">
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="assets/news.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Mes News">
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="assets/luhn.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Algorithme de Luhn">
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="assets/login.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Login">
+                </div>
+            </div>
+
+            <p class="w3-center"><em>Vous trouverez ci-dessous les travaux que j'ai réalisé au cours du stage.<br> Cliquez sur les images.</em></p><br>
+            <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+            <div class="w3-row-padding w3-center">
+                <div class="w3-col m3">
+                    <img src="assets/orchestra.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Traductions">
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="assets/orchestra.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bancontact">
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="assets/orchestra.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Batch">
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="assets/orchestra.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="ElasticSearch">
                 </div>
             </div>
 
             <div class="w3-row-padding w3-center w3-section">
                 <div class="w3-col m3">
-                    <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+                    <img src="assets/orchestra.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Prix_Plafond">
                 </div>
-
-                <div class="w3-col m3">
-                    <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-                </div>
-                <button class="w3-button w3-padding-large" style="margin-top:64px">LOAD MORE</button>
             </div>
         </div>
 
@@ -257,11 +311,31 @@
                 <!-- 2eme partie : Présentation du thème de veille -->
                 <div class="w3-col m6 w3-hide-small w3-padding-large">
                     <p class="w3-center"><em>Outils et méthodologie </em></p>
-                    <p></p>
+                    <p><span style="font-weight:bold ; color:#A9A9A9">Objectifs de la veille : </span>
+                    <ul>
+                        <li>Suivre une nouvelle tendance.</li>
+                        <li>Valider l'examen E4 du BTS.</li>
+                    </ul>
+                    </p>
+                    <p><span style="font-weight:bold ; color:#A9A9A9">Le thème : </span>Les écrans tactiles transparents</p>
+                    <p><span style="font-weight:bold ; color:#A9A9A9">Présentation du thème et des limites fixées pour la veille : </span>
+                        Focus sur les applications utilisant un périphérique informatique transparent qui réagit au contact des doigts et permet de ne pas se servir d'une souris ou d'un stylet afin de déclencher des programmes. On s'intéresse aussi bien aux prototypes qu'aux solutions commercialisées.</p>
                 </div>
-            </div>
-            <div class="w3-row-padding w3-center w3-section">
-                <a href="http://www.scoop.it/u/andrea-107" target="_blank"><button class="w3-button w3-padding-large" style="margin-top:64px">CONSULTER MA VEILLE TECHNOLOGIQUE</button></a>
+
+                <!-- 3eme partie : Suite présentation du thème de veille - à la ligne -->
+                <div class="w3-row-padding w3-left w3-section">
+                    <p><span style="font-weight:bold ; color:#A9A9A9">Les sources : </span>
+                        Google, Google Actualités, Google Patent, Twitter, Youtube, Scoop.it!, sites informatifs (c|net, CIO, clubic,...)</p>
+                    <p><span style="font-weight:bold ; color:#A9A9A9">Méthodes de veille : </span>
+                        Collecte d'informations, tri et synthèse. Le tri est fondamental. Pour cela, il est nécessaire de croiser les informations provenant de sources différentes.</p>
+                    <p><span style="font-weight:bold ; color:#A9A9A9">Choix personnels : </span>
+                        Je n'ai pas utilisé d'alertes Google, ni de flux RSS. Le sujet ne fait pas l'objet de publications régulières (quelques publications dans l'année mais l'information est toujours largement relayée dans les media. Cela facilite notamment la vérification de la véracité des informations) car la technologie est au stade du prototypage pour certaines applications et pour d'autres (je parle des solutions commercialisées), elles ne sont qu'au stade du lancement (1ère phase dans le cycle de vie d'un produit).</p>
+                </div>
+
+                <!-- 4eme partie : CONSULTER MA VEILLE TECHNOLOGIQUE-->
+                <div class="w3-row-padding w3-center w3-section">
+                    <a href="http://www.scoop.it/u/andrea-107" target="_blank"><button class="w3-button w3-padding-large" style="margin-top:64px">CONSULTER MA VEILLE TECHNOLOGIQUE</button></a>
+                </div>
             </div>
         </div>
 
@@ -298,7 +372,7 @@
                         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> meinhardt.andrea@gmail.com<br>
                     </div>
                     <p>Passez prendre un <i class="fa fa-coffee"></i>, ou laissez une note :</p>
-                    <form method="POST" action="action_page.php" target="_blank">
+                    <form method="POST" enctype="text/plain" action="mailto:meinhardt.andrea@gmail.com">
                         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                             <div class="w3-half">
                                 <input class="w3-input w3-border" type="text" placeholder="Name" required name="Nom">
@@ -308,7 +382,7 @@
                             </div>
                         </div>
                         <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                        <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <button class="w3-button w3-black w3-right w3-section" type="submit" >
                             <i class="fa fa-paper-plane"></i> ENVOYER
                         </button>
                     </form>
@@ -337,13 +411,11 @@
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 };
                 var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
-
                 var marker = new google.maps.Marker({
                     position: myCenter,
                 });
                 marker.setMap(map);
             }
-
             // Modal Image Gallery
             function onClick(element) {
                 document.getElementById("img01").src = element.src;
@@ -351,7 +423,6 @@
                 var captionText = document.getElementById("caption");
                 captionText.innerHTML = element.alt;
             }
-
             // Change style of navbar on scroll
             window.onscroll = function () {
                 myFunction()
@@ -364,7 +435,6 @@
                     navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
                 }
             }
-
             // Used to toggle the menu on small screens when clicking on the menu button
             function toggleFunction() {
                 var x = document.getElementById("navDemo");

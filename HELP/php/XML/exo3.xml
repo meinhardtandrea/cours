@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE biblio [
+<!ELEMENT biblio (livre|article)*>
+	<!ELEMENT livre (titre, auteur+, tome*, edition, avis)>
+            <!ELEMENT titre (#PCDATA)>
+            <!ATTLIST titre soustitre CDATA #IMPLIED>
+            <!ELEMENT auteur (#PCDATA)>
+            <!ELEMENT tome EMPTY>
+            <!ATTLIST tome nb_pages CDATA #REQUIRED>
+            <!ATTLIST tome soustitre CDATA #IMPLIED>
+            <!ELEMENT edition (editeur, lieu_edition, lieu_impression, isbn)>
+                    <!ELEMENT editeur (#PCDATA)>
+                    <!ELEMENT lieu_edition (#PCDATA)>
+                    <!ELEMENT lieu_impression (#PCDATA)>
+                    <!ELEMENT isbn (#PCDATA)>
+            <!ELEMENT avis (#PCDATA)>
+	<!ELEMENT article (titre, auteur+, journal)>
+		<!ELEMENT journal (page, num_journal)>
+                    <!ATTLIST journal nom_journal CDATA "Feuille de Chou">
+                    <!ATTLIST journal annee (2000 | 2001 | 2002 | avant_2000 | inconnue) "inconnue" >
+                    <!ELEMENT page (#PCDATA)>
+                    <!ELEMENT num_journal (#PCDATA)>
+                    <!ELEMENT annee (#PCDATA)>
+]>
+<biblio>
+    <livre>
+        <titre soustitre="test">Exemple</titre>
+        <auteur>Prénom Nom</auteur>
+        <tome nb_pages="280" soustitre="tome1" />
+        <tome nb_pages="310" soustitre="tome2" />
+        <tome nb_pages="420" soustitre="tome3" />
+        <edition>
+            <editeur>Nom éditeur</editeur>
+            <lieu_edition>Lieu édition</lieu_edition>
+            <lieu_impression>Lieu impression</lieu_impression>
+            <isbn>Numéro ISBN</isbn>
+        </edition>
+            <avis>Un avis...</avis>
+    </livre>
+    <article>
+        <titre>Titre</titre>
+        <auteur>Auteur 1</auteur>
+        <auteur>Auteur 2</auteur>
+        <journal nom_journal="Nom du journal" annee="2002">
+            <page>page 4</page>
+            <num_journal>5335454zg</num_journal>
+        </journal>
+    </article>
+</biblio>

@@ -1,0 +1,25 @@
+table {
+border: 1px solid #cacaca;
+border-collapse: collapse;
+width: 100%;
+font-size: 12px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-weight: normal;
+text-decoration: none;
+color: #344248;
+}
+
+th {
+border: 1px solid #cacaca;
+padding: 2px;
+height: 25px;
+width: 50px;
+}
+
+td {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+border: 1px solid #cacaca;
+padding: 2px;
+height: 25px;
+text-align: center;
+}
